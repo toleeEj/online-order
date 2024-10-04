@@ -1,0 +1,598 @@
+/* General Styles */
+body {
+    animation:  fadeIn 1s ease-in-out;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f7725a5f;
+}
+
+h1, h2, h3, #about h3, #blog article h3, #faq h3, .menu-category h3, .image-item h3 {
+    color: #000306;
+    margin-bottom: 15px;
+    animation: slideInDown 0.8s ease-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    animation: fadeInUp 1s ease-in-out;
+
+}
+
+a {
+    text-decoration: none;
+    color: #29f080;
+}
+
+a:hover {
+    color: #3498db7c;
+    animation: pulse 0.5s;
+
+}
+
+/* Header and Navigation */
+header {
+    background: linear-gradient(45deg, green, blue);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;    
+    animation: fadeInDown 1s ease-in-out;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    animation: zoomIn 1s;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    animation: rotateIn 1s;
+
+}
+
+
+header h1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    font-size: 24px;
+    z-index: 1000; 
+    animation: fadeIn 2s;
+
+  }
+
+.user {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    animation: slideInRight 1.5s;
+}
+
+.user a {
+    margin-left: 5px;
+    background-color: #45d31163;
+    padding: 10px;
+    border-radius: 10px;
+    animation: bounceIn 1.2s;
+
+}
+
+header a:hover {
+    color: #7efab3;
+    background-color: #09391e;
+    animation: rubberBand 0.8s;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    animation: fadeInUp 1s;
+}
+
+nav ul li {
+    margin: 0 15px;
+    animation: flipInX 0.8s;
+
+}
+
+nav ul li a {
+    font-weight: bold;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #2980b9;
+    border-radius: 5px;
+    animation: swing 1s ease;
+
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('/o.food/lndg.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+    animation: zoomIn 1.5s;
+}
+
+.banner h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    animation: bounceInDown 1.5s;
+}
+
+.banner h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    background-color: #e74d3c49;
+    animation: fadeInUp 1.2s;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    animation: bounceIn 1.5s;
+
+}
+
+.cta-button:hover {
+    background-color: #c0392b;
+    color: #29f080;
+    animation: pulse 1s;
+
+}
+
+/* Menu Section */
+#menu {
+    background-color: #07a73173;
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeInUp 1.5s;
+
+}
+
+#menu h2 {
+    font-size: 2.5em;
+    margin: 10px;
+    animation: bounceInLeft 1.2s;
+
+}
+
+.menu-category {
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    animation: fadeInUp 1.5s;
+}
+
+.menu-category input,
+#locationInput,
+#contact form input,
+#contact form textarea {
+    width: 20%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.gosa{
+    margin: 50px;
+    font-size: 30px;
+    animation: slideInUp 1.2s;
+
+}
+
+
+.gosa h1{
+    color: #29f080;
+    background-color: #000306;
+    animation: fadeIn 1.5s;
+
+}
+.image-item {
+    flex: 1;
+    text-align: center;
+}
+
+.image-item img {
+    width: 400px;    
+    height: 330px;
+    display: block;
+    margin: 0 auto 10px auto;
+    border-radius: 40px;
+    animation: zoomIn 1.2s;
+
+}
+
+.image-item img:hover{
+    animation: swing 1s ease;
+
+}
+
+/* Order Online Section */
+#order {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#order form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.order-item {
+    margin-bottom: 20px;
+}
+
+.order-item label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.order-item input,
+#locationInput,
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+
+}
+
+button[type="submit"]:hover {
+    background-color: #2ecc71;
+    animation: shake 1s;
+
+}
+
+.message {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 0.9em;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.message.success {
+    color: #2ecc71;
+    font-size: 50px;
+}
+
+.message.error {
+    color: #e74c3c;
+    font-size: 20px;
+}
+
+/* Delivery Management */
+#delivery {
+    background-color: #ecf0f1;
+    padding: 50px 20px;
+    text-align: center;
+    animation: slideInUp 1.2s;
+
+}
+
+#delivery ul {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#delivery ul li {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.submt{
+    padding: 20px;
+    margin: 20px;
+    align-items: center;
+    left: 100px;
+}
+
+
+/* User Accounts */
+#user-account {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.auth-links {
+    margin-bottom: 30px;
+}
+
+.auth-links a {
+    margin: 0 10px;
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.order-history ul {
+    margin: 20px auto;
+    width: 50%;
+}
+
+.order-history ul li {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* About Us */
+#about {
+    background-color: #ecf0f1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+/* Contact Us */
+#contact {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact form div {
+    margin-bottom: 20px;
+}
+
+#contact form textarea {
+    height: 150px;
+}
+
+#contact .location,
+#contact .hours {
+    margin-top: 30px;
+}
+
+#contact iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Blog Section */
+#blog {
+    background-color: #ecf0f1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#blog article {
+    margin-bottom: 40px;
+}
+
+/* FAQs Section */
+#faq {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#faq p {
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p,
+footer .social-links {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #3498db;
+}
+
+footer a:hover {
+    color: #2980b9;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+footer .social-links a:hover {
+    color: #3498db;
+}
+
+/* Mobile Navigation Toggle */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 2em;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+nav ul.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #34495e;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #order {
+        padding: 15px;
+    }
+
+    .order-item input,
+    #locationInput {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .order-item {
+        margin-bottom: 10px;
+    }
+
+    button[type="submit"] {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    header {
+        position: relative;
+        padding: 20px 0;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    #menu .menu-category {
+        flex-direction: column;
+    }
+
+    #delivery ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #user-account .order-history ul {
+        width: 100%;
+    }
+
+    .image-gallery {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounceIn {
+    0%, 20%, 40%, 60%, 100% { transform: translateY(0); }
+    80% { transform: translateY(-20px); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25%, 75% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+@keyframes swing {
+    20% { transform: rotate(5deg); }
+    40% { transform: rotate(-5deg); }
+    60% { transform: rotate(1deg); }
+    80% { transform: rotate(-5deg); }
+    100% { transform: rotate(0); }
+}
+
+@keyframes flipInX {
+    from { transform: perspective(400px) rotateX(90deg); opacity: 0; }
+    to { transform: perspective(400px) rotateX(0); opacity: 1; }
+}

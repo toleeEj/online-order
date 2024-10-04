@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rift Valley Hotel - Online Ordering & Delivery</title>
+    <link rel="stylesheet" href="/CSS/oo.css"> 
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <header>
+        <div class="logo">
+            <img src="/o.food/logo.jpg" alt="">
+           <h2> RV Hotel</h2>
+        </div>
+        <div class="user">
+            <a href="/signup.html">signup</a>
+            <a href="/login.html">Login</a>
+        </div>
+        <h1>well come to rift Valley Hotel</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order Online</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#faq">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Homepage -->
+    <section id="home">
+        <div class="banner">
+            <h1>Welcome to Rift Valley Hotel</h1>
+            <h2>Experience the best food in town</h2>
+            <a href="#order" class="cta-button">Order Now</a>
+        </div>
+    </section>
+
+    <!-- Online Menu -->
+    <section id="menu">
+        <div class="gosa">
+            <h1>Gosoota Nyaataa</h1>
+        </div>
+        <div class="menu-category" id="orderForm">
+                <div class="image-item">
+                    <img src="/o.food/Cororsaa.jpg" alt="Cororsaa">
+                    <input type="number" id="item1" name="item1" min="0" max="10" placeholder="inter amount">
+                    <h3>Cororsaa</h3>
+                </div>
+                <div class="image-item">
+                    <img src="/o.food/Marqaa.jpg" alt="Marqaa">
+                    <input type="number" id="item2" name="item2" min="0" max="10" placeholder="inter amount">
+                    <h3>Marqaa</h3>
+                </div>
+                <div class="image-item">
+                    <img src="/o.food/foonlukkuu.jpg" alt="Foon lukkuu">
+                    <input type="number" id="item3" name="item3" min="0" max="10" placeholder="inter amount">
+                    <h3>Foon lukkuu</h3>
+                </div>
+        </div>
+        <div class="menu-category">
+            <div class="image-item">
+                <img src="/o.food/Ancootee.jpg" alt="Ancootee">
+                <input type="number" id="item1" name="item1" min="0" max="10" placeholder="inter amount">
+                <h3>Ancootee</h3>
+            </div>
+            <div class="image-item">
+                <img src="/o.food/Cuukkoo.jpg" alt="Cuukkoo">
+                <input type="number" id="item1" name="item1" min="0" max="10" placeholder="inter amount">
+
+                <h3>Cuukkoo</h3>
+            </div>
+            <div class="image-item">
+                <img src="/o.food/shekla tibs.jpg" alt="shekla tibs">
+                <input type="number" id="item2" name="item2" min="0" max="10" placeholder="inter amount">
+                <h3>shekla tibs</h3>
+            </div>
+        </div>
+        <div class="gosa">
+            <h1>Gosoota Dhugaatii</h1>
+        </div>
+        <div class="menu-category">
+            <div class="image-item">
+                <img src="/o.food/booka.jpg" alt="booka">
+                <input type="number" id="item2" name="item2" min="0" max="10" placeholder="inter amount">
+                <h3>booka</h3>
+            </div>
+            <div class="image-item">
+                <img src="/o.food/Farso-360x240.jpg" alt="Farso">
+                <input type="number" id="item1" name="item1" min="0" max="10" placeholder="inter amount">
+                <h3>Farso</h3>
+            </div>
+            <div class="image-item">
+                <img src="/o.food/dama.jpg" alt="damma">
+                <input type="number" id="item3" name="item3" min="0" max="10" placeholder="inter amount">
+                <h3>damma</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Ordering System -->
+    <section id="order">
+        <h2>Order Online</h2>
+        <form id="orderForm" action="process_order.php" method="post">
+            <div class="order-item">
+    
+            <button type="submit">Place Order</button>
+    
+            <!-- Containers for displaying messages -->
+            <div id="orderMessage" class="message"></div>
+            <div id="locationMessage" class="message"></div>
+        </form>
+    </section>
+
+    <div class="submt">
+        <h3 id="responce"></h3>
+        <button id="sub" type="submit">submit you order</button>
+    </div>
+
+<section id="delivery">
+    <div>
+        <h1>We deliver to the following areas:</h1>
+        <ul>
+            <li>BAAROO KORMAA </li>
+            <li>AGAMSA </li>
+            <li>Laga harree</li>
+            <li>DAALATTII </li>
+            <li>Caffee Araaraa</li>
+            <li>BIRBIRSA GOOROO</li>
+            <!-- Add more areas as needed -->
+        </ul>
+        <p>Estimated delivery time: 15-45 minutes</p>
+    </div>
+</section>
+    
+<!-- Delivery Management -->
+<section id="delivery">
+    <!-- Contact Us -->
+    <section id="contact">
+        <h2>if you have personal requerinets on your order you can write in the following box</h2>
+        <form action="submit_contact.php" method="post">
+            <div>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div>
+            <h3 id="sumitted"></h3>
+        </div>
+        <div class="location">
+            <h3>Our Location</h3>
+            <p>123 Rift Valley Road, Addi Ababa, Ethiopia</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127847.40612232988!2d38.654550548140174!3d9.034168530808146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b84b1d6d616a1%3A0x4e1a5d1b4e1ed3d2!2sAddis%20Ababa!5e0!3m2!1sen!2set!4v1693532123456!5m2!1sen!2set" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="hours">
+            <h3>Operating Hours</h3>
+            <p>Monday - Friday: 9 AM - 10 PM</p>
+            <p>Saturday - Sunday: 10 AM - 11 PM</p>
+        </div>
+    </section>
+
+</section>
+
+    <!-- User Accounts -->
+    <section id="user-account">
+        <h2>User Account</h2>
+        <div class="auth-links">
+            <a href="login.html">Login</a> | 
+            <a href="signup.html">Sign Up</a>
+        </div>
+        <div class="order-history">
+            <h3>Your Order History</h3>
+            <ul>
+                <li>Order #1 - Completed</li>
+                <li>Order #2 - In Progress</li>
+                <!-- Add more orders as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Rift Valley Hotel, your home for exceptional culinary experiences. Here, we take pride in serving delicious dishes crafted from the finest ingredients, ensuring every meal is a memorable one. Whether you're here for a quick bite or a leisurely dining experience, our commitment to quality and hospitality will make you feel right at home. Enjoy the warmth of our service and the richness of our flavors at Rift Valley Hotel.</p>
+        <h3>Chef’s Specialties</h3>
+        <p>Our chefs create signature dishes that you’ll love.</p>
+        <h3>Customer Testimonials</h3>
+        <p>"Amazing food and great service!" Mr.x</p>
+        <!-- Add more testimonials as needed -->
+    </section>
+
+
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2>Latest News</h2>
+        <article>
+            <h3>New Menu Items</h3>
+            <p>We’ve added some exciting new dishes to our menu. Check them out!</p>
+        </article>
+        <!-- Add more blog posts as needed -->
+    </section>
+
+    <!-- FAQs -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <h3>How do I place an order?</h3>
+        <p>You can place an order online through our website or call us directly.</p>
+        <h3>What payment methods do you accept?</h3>
+        <p>We accept all major credit cards, mobile payments, and cash on delivery.</p>
+        <!-- Add more FAQs as needed -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Rift Valley Hotel. All Rights Reserved.</p>
+        <p><a href="privacy_policy.html">Privacy Policy</a> | <a href="terms_conditions.html">Terms & Conditions</a></p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+    <script src="/JS/oo.js"></script>
+</body>
+</html>
